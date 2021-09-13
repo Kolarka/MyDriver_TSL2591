@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_col"
+    tools:context=".UV">
+
+    <RelativeLayout
+        android:id="@+id/findcity"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_temp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/findcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/weathericon"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/sun_image">
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginStart="200dp"
+            android:id="@+id/temperature"
+            android:textSize="50sp"
+            android:textColor="#FF7C02"
+            android:text="@string/_0_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+
+            android:layout_below="@id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weathercondition"
+            android:textSize="20sp"
+            android:textColor="#FF7C02"
+            android:text="@string/a"
+            android:layout_marginStart="220dp">
+
+        </TextView>
+        <TextView
+            android:text="@string/fetching"
+            android:textColor="#FF7C02"
+            android:textSize="30sp"
+            android:id="@+id/city_name"
+            android:layout_below="@id/weathercondition"
+            android:layout_marginStart="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_sun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_temp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:contentDescription="@string/esun"
+            android:src="@drawable/sun2">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="130dp"
+            android:text="@string/uvv"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/uv_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="146dp"
+            android:text="@string/p"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/zastitni_faktor_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uv_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="123dp"
+            android:layout_marginBottom="122dp"
+            android:text="@string/za_titni_faktor"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/zastit_fakt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"
+            android:text="@string/r"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dod_oprema"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rel_sun">
+
+        <TextView
+            android:id="@+id/id_naocale"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/dod_oprema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+           android:layout_centerHorizontal="true"
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
