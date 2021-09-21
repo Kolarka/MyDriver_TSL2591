@@ -148,6 +148,18 @@
         android:layout_below="@+id/rel_sun">
 
         <TextView
+            android:layout_marginStart="40dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/Dod_ope"
+            android:text="@string/dodatna_za_tita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/Dod_ope"
             android:id="@+id/id_naocale"
             android:layout_width="300dp"
             android:layout_height="50dp"

@@ -15,4 +15,6 @@
 <string name="r">__</string>
 <string name="za_titni_faktor">Zaštitni faktor</string>
     <string name="back">Back</string>
+    <string name="dodatna_za_tita">Dodatna zaštita:</string>
+    <string name="mjerna_stanica_za_pra_enje_uv_zra_enja">Mjerna stanica za praćenje UV zračenja</string>
 </resources>

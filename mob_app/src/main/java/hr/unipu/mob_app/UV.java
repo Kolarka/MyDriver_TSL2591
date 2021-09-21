@@ -64,7 +64,7 @@ public class UV extends Fragment {
     LocationListener mLocationListener;
 
 
-    Long rez;
+    Long lux;
 
     public UV() {
     }
@@ -92,7 +92,7 @@ public class UV extends Fragment {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                    rez = ds.getValue(Long.class);
+                    lux = ds.getValue(Long.class);
                     Integer rezultat = getArguments().getInt("Option");
 
 
@@ -112,31 +112,31 @@ public class UV extends Fragment {
                             fta.commit();
                         }
                     });
-                    if ((rez >= 0 && rez <= 50) && rezultat == 1) {
+                    if ((lux >= 0 && lux <= 50) && rezultat == 1) {
                         UV.setText(" " + 1);
                         add.setText("Naočale");
                         spf.setText("30 SPF");
 
                     }
-                    if ((rez >= 0 && rez <= 50) && rezultat == 2) {
+                    if ((lux >= 0 && lux <= 50) && rezultat == 2) {
                         UV.setText(" " + 1);
                         add.setText("Naočale");
                         spf.setText("15 SPF");
 
                     }
-                    if ((rez >= 0 && rez <= 50) && rezultat == 3) {
+                    if ((lux >= 0 && lux <= 50) && rezultat == 3) {
                         UV.setText(" " + 1);
                         add.setText("Naočale");
                         spf.setText("15 SPF");
 
                     }
-                    if ((rez >= 0 && rez <= 50) && rezultat == 4) {
+                    if ((lux >= 0 && lux <= 50) && rezultat == 4) {
                         UV.setText(" " + 1);
                         add.setText("Naočale");
                         spf.setText("8-14 SPF");
 
                     }
-                    if ((rez >= 0 && rez <= 50) && rezultat == 5) {
+                    if ((lux >= 0 && lux <= 50) && rezultat == 5) {
                         UV.setText("" + 1);
                         add.setText("Naočale");
                         spf.setText("8-14 SPF");
@@ -144,127 +144,127 @@ public class UV extends Fragment {
                     }
 
 
-                    if ((rez >= 51 && rez <= 100) && rezultat == 1) {
+                    if ((lux >= 51 && lux <= 100) && rezultat == 1) {
                         UV.setText(" " + 2);
                         add.setText("Naočale i šešir");
                         spf.setText("30 SPF");
 
                     }
-                    if ((rez >= 51 && rez <= 100) && rezultat == 2) {
+                    if ((lux >= 51 && lux <= 100) && rezultat == 2) {
                         UV.setText(" " + 2);
                         add.setText("Naočale i šešir");
                         spf.setText("30 SPF");
 
                     }
-                    if ((rez >= 51 && rez <= 100) && rezultat == 3) {
+                    if ((lux >= 51 && lux <= 100) && rezultat == 3) {
                         UV.setText(" " + 2);
                         add.setText("Naočale i šešir");
                         spf.setText("30 SPF");
 
                     }
-                    if ((rez >= 51 && rez <= 100) && rezultat == 4) {
+                    if ((lux >= 51 && lux <= 100) && rezultat == 4) {
                         UV.setText(" " + 2);
                         add.setText("Naočale i šešir");
                         spf.setText("15 SPF");
 
                     }
-                    if ((rez >= 51 && rez <= 100) && rezultat == 5) {
+                    if ((lux >= 51 && lux <= 100) && rezultat == 5) {
                         UV.setText(" " + 2);
                         add.setText("Naočale i šešir");
                         spf.setText("8-14 SPF");
 
                     }
 
-                    if ((rez >= 101 && rez <= 150) && rezultat == 1) {
+                    if ((lux >= 101 && lux <= 150) && rezultat == 1) {
                         UV.setText(" " + 3);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("50+ SPF");
 
                     }
-                    if ((rez >= 101 && rez <= 150) && rezultat == 2) {
+                    if ((lux >= 101 && lux <= 150) && rezultat == 2) {
                         UV.setText(" " + 3);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("50+ SPF");
 
                     }
-                    if ((rez >= 101 && rez <= 150) && rezultat == 3) {
+                    if ((lux >= 101 && lux <= 150) && rezultat == 3) {
                         UV.setText(" " + 3);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("30 SPF");
 
                     }
-                    if ((rez >= 101 && rez <= 150) && rezultat == 4) {
+                    if ((lux >= 101 && lux <= 150) && rezultat == 4) {
                         UV.setText(" " + 3);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("15 SPF");
 
                     }
-                    if ((rez >= 101 && rez <= 150) && rezultat == 5) {
+                    if ((lux >= 101 && lux <= 150) && rezultat == 5) {
                         UV.setText(" " + 3);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("15 SPF");
 
                     }
 
-                    if ((rez >= 151 && rez <= 200) && rezultat == 1) {
+                    if ((lux >= 151 && lux <= 200) && rezultat == 1) {
                         UV.setText(" " + 4);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("50-100 SPF");
 
                     }
-                    if ((rez >= 151 && rez <= 200) && rezultat == 2) {
+                    if ((lux >= 151 && lux <= 200) && rezultat == 2) {
                         UV.setText(" " + 4);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("50+ SPF");
 
                     }
 
-                    if ((rez >= 151 && rez <= 200) && rezultat == 3) {
+                    if ((lux >= 151 && lux <= 200) && rezultat == 3) {
                         UV.setText(" " + 4);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("30 SPF");
 
                     }
-                    if ((rez >= 151 && rez <= 200) && rezultat == 4) {
+                    if ((lux >= 151 && lux <= 200) && rezultat == 4) {
                         UV.setText(" " + 4);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("30 SPF");
 
                     }
-                    if ((rez >= 151 && rez <= 200) && rezultat == 5) {
+                    if ((lux >= 151 && lux <= 200) && rezultat == 5) {
                         UV.setText(" " + 4);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("15 SPF");
 
                     }
 
-                    if ((rez >= 201 && rez <= 250) && (rezultat == 1 || rezultat == 2 || rezultat == 3)) {
+                    if ((lux >= 201 && lux <= 250) && (rezultat == 1 || rezultat == 2 || rezultat == 3)) {
                         UV.setText(" " + 5);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("50-100 SPF");
 
                     }
-                    if ((rez >= 251 && rez <= 300) && rezultat == 4) {
+                    if ((lux >= 251 && lux <= 300) && rezultat == 4) {
                         UV.setText(" " + 6);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("50+ SPF");
 
                     }
 
-                    if ((rez >= 251 && rez <= 300) && rezultat == 5) {
+                    if ((lux >= 251 && lux <= 300) && rezultat == 5) {
                         UV.setText(" " + 7);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("30 SPF");
 
                     }
 
-                    if (rez >= 301 && rez <= 350) {
+                    if (lux >= 301 && lux <= 350) {
                         UV.setText(" " + 8);
                         add.setText("Naočale, šešir, držati se sjene");
                         spf.setText("50-100 SPF");
 
                     }
-                    if (rez >= 351) {
+                    if (lux >= 351) {
                         UV.setText(" " + 9);
                         add.setText("Naočale, šešir, držati se sjene, izbjegavati izlaziti između 10:00 i 16:00 sati");
                         spf.setText("100 SPF");
@@ -303,11 +303,7 @@ public class UV extends Fragment {
                 connecting(params);
             }
         };
-        /*
-        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION);
-        }
-        mLocationManager.requestLocationUpdates(Location_Provider, MIN_TIME, MIN_DISTANCE, mLocationListener);*/
+
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
